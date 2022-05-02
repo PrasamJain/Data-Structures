@@ -1,4 +1,14 @@
-//define circular linked list using c/c++
+//circular linked list using c/c++
+
+//Circular linked list is a linked list where all nodes are connected to form a circle. 
+//There is no NULL at the end. A circular linked list can be a singly circular linked list or doubly circular linked list.
+
+
+//In this file we first create Singly circular linked list and then perform Insertion and Deletion operation using switch case.
+
+//TYPES...
+//INSERTION : at_Begin , at_end , at_any_point.
+//DELETION : at_Begin , at_end , at_any_point.
 
 #include<stdio.h>
 #include<stdlib.h>
