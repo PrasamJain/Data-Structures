@@ -1,14 +1,38 @@
-********   Singly Linked List      **********
+********   Linked List      **********
 
 
- * The singly linked list is a linear data structure in which each element of the list contains a pointer which points to the next element in the list. 
- * Each element in the singly linked list is called a node. 
- * Each node has two components: data and a pointer next which points to the next node in the list. 
- * The first node of the list is called as head, and the last node of the list is called a tail. The last node of the list contains a pointer to the null. 
- * Each node in the list can be accessed linearly by traversing through the list from head to tail.
+* A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations.
+
+* The size of the arrays is fixed: So we must know the upper limit on the number of elements in advance. 
+  Also, generally, the allocated memory is equal to the upper limit irrespective of the usage. 
+
+* A linked list is represented by a pointer to the first node of the linked list. The first node is called the head. 
+If the linked list is empty, then the value of the head points to NULL. 
+
+* Each node in a list consists of at least two parts: 
+  1) data (we can store integer, strings or any type of data).
+  2) Pointer (Or Reference) to the next node (connects one node to another)
+* In C/C++, we can represent a node using structures.
 
 
-OPERATIONS ON SINGLY LINKED LIST........
+Structure OF Linked List
+________________________________________________
+
+
+          head                                        tail part  
+            |
+            |
+        +---+----+          +---+---+         +----+------+
+        | 1 | o  |--------->| 2 | o |-------> | 3  | NULL |
+        +---+----+          +---+---+         +----+------+ 
+        ^       ^
+        |       |
+      Data      Pointer to next node.
+
+
+
+
+OPERATIONS ON LINKED LIST........
 ________________________________________
 
 * Traversal - access each element of the linked list.
