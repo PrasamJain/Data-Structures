@@ -1,4 +1,11 @@
-//insertion between linked list using c/c++
+// There are three Possible Ways to Inserting a new element into a singly linked list.
+/*      - Insertion at beginning. 
+	- Insertion at end of the list
+	- Insertion after specified node.
+*/
+// In this solution we perform Insertion using Switch Case.
+
+
 
 #include<stdio.h>
 #include<stdlib.h>
