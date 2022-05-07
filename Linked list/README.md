@@ -19,11 +19,11 @@ Structure OF Linked List
 ________________________________________________
 
 
-          head                                        tail part  
-            |
-            |
+    head part                                            tail part  
+            
+            
         +---+----+          +---+---+         +----+------+
-        | 1 | o  |--------->| 2 | o |-------> | 3  | NULL |
+        | 5 | o  |--------->| 8 | o |-------> | 2  | NULL |
         +---+----+          +---+---+         +----+------+ 
         ^       ^
         |       |
@@ -50,3 +50,12 @@ ________________________________________
 * Update - change the value of any node.
 
 * Reverse the list - Reverse all the node by reversing pointer to the node.
+
+
+FOUR TYPES OF LINKED LIST.........
+__________________________________________
+
+* Singly linked list.
+* Circular linked list.
+* Singly-Circular linked list.
+* Doubly-Circular linked list.
