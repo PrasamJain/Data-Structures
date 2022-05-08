@@ -1,4 +1,13 @@
-//deletetion at beginning or ending or at any position linked list using c/c++
+							/******* DELETION ON SINGLY LINKED LIST ***********/
+
+
+// There are three Possible Ways to Deleting a new element into a singly linked list.
+/*      - Deletion at beginning. 
+	- Deletion at end of the list
+	- Deletion after specified node.
+*/
+// In this solution we perform Insertion using Switch Case.
+
 
 #include<stdio.h>
 #include<stdlib.h>
