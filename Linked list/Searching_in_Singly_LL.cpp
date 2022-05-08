@@ -1,4 +1,10 @@
-//search an element in single LL
+							/******  Search an element in single Linked list *******/
+
+/* 	Searching is performed to find the location of a particular element in the linked list. 
+	Searching any element in the linked list, needs traversing through the list and Comparing every element of the list with the Key element. 
+	If the Key element is matched with any of the list element then the Position of the element is returned from the function otherwise return NULL.
+*/
+
 
 #include<stdio.h>
 #include<stdlib.h>
