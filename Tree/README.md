@@ -33,7 +33,7 @@ The topmost node is called the root node. A node with no children is called a le
     Balanced binary tree
     Binary search tree
     
-#C/C++ Sturcture of Trees using "struct"   
+#C/C++ Sturcture of Trees using "struct".
 
     struct node 
     {
@@ -42,5 +42,18 @@ The topmost node is called the root node. A node with no children is called a le
       struct node *right;         //Reference to right child
     };
     
-    
-    
+TRAVERSAL . . .
+
+  InOrder
+  PreOrder
+  PostOrder
+
+OPERATIONS ON TREE . . .
+
+  insertion
+  deletion
+  searching
+  Find maximum element
+  Find minimum element
+  Find inorder Successor
+  Find inorder predecessor 
