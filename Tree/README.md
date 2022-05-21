@@ -44,16 +44,16 @@ The topmost node is called the root node. A node with no children is called a le
     
 TRAVERSAL . . .
 
-  InOrder
-  PreOrder
-  PostOrder
+  InOrder       
+  PreOrder        
+  PostOrder       
 
 OPERATIONS ON TREE . . .
 
-  insertion
-  deletion
-  searching
-  Find maximum element
-  Find minimum element
-  Find inorder Successor
-  Find inorder predecessor 
+  insertion      
+  deletion       
+  searching      
+  Find maximum element      
+  Find minimum element      
+  Find inorder Successor      
+  Find inorder predecessor       
