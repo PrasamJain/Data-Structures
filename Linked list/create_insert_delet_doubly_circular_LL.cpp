@@ -1,5 +1,20 @@
 //define double linked list using c/c++
 
+/*
+Doubly Circular linked list is a linked list where all nodes are connected to form a circle i.e No Null End.
+In Singly circular LL we traverse only in one direction i.e their is No way to move backword.
+But in Doubly circular we move forword as well as backword direction because One node contain three fields - 
+
+		Pointer to previous node  | DATA  | Pointer to next node
+
+In this file we first create Doubly circular linked list and then perform Insertion and Deletion operation using switch case.
+
+TYPES...
+INSERTION : at_Begin , at_end , at_any_point.
+DELETION : at_Begin , at_end , at_any_point.
+
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<iostream>
