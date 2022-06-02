@@ -56,6 +56,6 @@ FOUR TYPES OF LINKED LIST.........
 __________________________________________
 
 * Singly linked list.
-* Circular linked list.
+* Doubly linked list.
 * Singly-Circular linked list.
 * Doubly-Circular linked list.
