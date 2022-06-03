@@ -19,8 +19,25 @@ The stack is mostly used in converting and evaluating expressions in Polish nota
 	Prefix
 	Postfix
 	
-Stack Sturcture ...
-
+Stack Sturcture
+     
+		pop()  --->       <--- push()
+				   
+				.			.	<-- TOP 
+				.			.
+				.	 		.
+				+-----------+
+				| 			|
+				+-----------+
+				| 			|
+				+-----------+
+				| 			|
+				+-----------+
+				| 	200		|
+				+-----------+
+				| 	100		|	<-- index 0
+				+-----------+
+    
 
 Basic Operations ...
 
