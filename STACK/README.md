@@ -9,6 +9,7 @@ REAL-LIFE_EXAMPLE...
 Let us suppose take the real-life example of a stack of plates or a pile of books etc. As the item in this form of 
 data structure can be removed or added from the top only which means the last item to be added to the stack is the first 
 item to be removed. So you can say that the stack follows the Last In First Out (LIFO) structure.
+We can implement stack using Array as well as linked list.
 
 APPLICATIONS...
 
@@ -18,4 +19,14 @@ The stack is mostly used in converting and evaluating expressions in Polish nota
 	Prefix
 	Postfix
 	
-	
+Stack Sturcture ...
+
+
+Basic Operations ...
+
+	push() − Pushing (storing) an element on the stack.
+	pop() − Removing (accessing) an element from the top of the stack.
+	peek() − get the top data element of the stack, without removing it.
+	isFull() − check if stack is full.
+	isEmpty() − check if stack is empty.
+
