@@ -1,6 +1,6 @@
 #STACK
 
-A stack is a linear data structure in which all the insertion and deletion of data or you can say its values are done at 
+A stack is an Abstract Data Type (ADT) and it is a linear data structure in which all the insertion and deletion of data or you can say its values are done at 
 one end only, rather than in the middle.
 The same end which is called the "TOP" of the stack.
 
