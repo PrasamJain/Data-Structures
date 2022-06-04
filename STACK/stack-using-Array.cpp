@@ -1,4 +1,5 @@
-/*
+/*  STACK IMPLEMENTATION & THEIR BASIC OPERATIONs
+
 We can create stack using two ways - Array and Linked List. 
 In this file we create stack using array static allocation with push,pop,peek and display function in C/C++.
 */
