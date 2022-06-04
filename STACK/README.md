@@ -21,21 +21,21 @@ The stack is mostly used in converting and evaluating expressions in Polish nota
 	
 Stack Sturcture
      
-		pop()  --->       <--- push()
+	 		pop()  --->       <--- push()
 				   
-				.			.	<-- TOP 
-				.			.
-				.	 		.
+				.	    .	<-- TOP 
+				.	    .
+				.	    .
 				+-----------+
-				| 			|
+				| 	    |
 				+-----------+
-				| 			|
+				|           |
 				+-----------+
-				| 			|
+				| 	    |
 				+-----------+
-				| 	200		|
+				|   200	    |
 				+-----------+
-				| 	100		|	<-- index 0
+				|   100	    |	<-- index 0
 				+-----------+
     
 
