@@ -1,4 +1,18 @@
-// create stack using dynamic memory allocation or LL
+/*  STACK IMPLEMENTATION & THEIR BASIC OPERATIONs
+ 
+In this file we create stack using Dynamic memory allocation OR linked list with push,pop,peek and display function in C/C++.
+To implement a stack using singly linked list concept, all the linked list operations are performed based on Stack operations LIFO.
+
+A stack contains a top pointer. which is “head” of the stack where pushing and popping items happens at the head of the list. 
+First node have null in link field and second node have first node address and so on and last node address in “top” pointer.
+
+#Advantages . . .
+
+In using array will put a restriction to the maximum capacity of the array which can lead to stack overflow. 
+Here each new node will be dynamically allocate. so overflow is not possible.
+
+*/
+
 
 #include<bits/stdc++.h>
 using namespace std;
