@@ -1,4 +1,6 @@
 /* infix  to  prefix using stack*/
+// we convert infix equation into prefix equations using stack. It is the one of the application of Stack.
+
 #include <iostream>
 #include <cstring>
 #include <stdlib.h>
