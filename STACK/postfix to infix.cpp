@@ -1,4 +1,5 @@
 /* postfix to infix */
+// first we convert infix to postfix , Now we convert back from postfix to infix.
 
 #include<iostream>
 #include<stdlib.h>
