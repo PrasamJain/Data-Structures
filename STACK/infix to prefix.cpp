@@ -178,4 +178,7 @@ for(i=0; i<n; i++)
     return 0;
 }
 
-//k+l-m*n+(o^p)*w/u/v*t+q
+
+//Example for conversion - try yourself !!
+
+// InfixEquation :-    k+l-m*n+(o^p)*w/u/v*t+q
