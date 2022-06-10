@@ -1,6 +1,4 @@
-/* infix  to  posfix using stack*/
-// we convert infix equation into postfix equations using stack. It is the one of the application of Stack.
-
+/* infix  to  prefix using stack*/
 #include <iostream>
 #include <cstring>
 #include <stdlib.h>
@@ -8,7 +6,7 @@
 using namespace std;
 char stack[N];
 int top = -1;
-char postfix[30];
+char prefix[30];
 
 void push(char x)
 {
@@ -18,18 +16,18 @@ void push(char x)
 	}
 	else
 	{
+		cout<<"push :" <<x<<endl;
 		top++;
-		cout<<"PUSH : "<<x<<endl;
 		stack[top] = x;
 	}
 }
 
 char pop()
 {
-		cout<<"POP : "<<stack[top]<<endl;
-		char ch = stack[top];
-		top--;
-		return ch;
+	cout<<"pop : "<<stack[top]<<endl;
+	char ch = stack[top];
+	top--;
+	return ch;
 }
 
 void peek()
@@ -51,26 +49,35 @@ int precedence (char ch)
     case '|':
     	return 1;
     case '&':
-    	return 2;
+    	return 2;	
     case '+':
     case '-':
-      return 3;
+      	return 3;
 
     case '*':
     case '/':
-      return 4;
+      	return 4;
 
     case '^':
-      return 5;
+      	return 5;
     }
   return -1;
 }
 
-
+void reverse(char a[],int n)
+{
+    int j = n-1 , i;
+	char temp;
+	for (i = 0; i < j; i++,j--)
+    {
+    	temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+	}
+}
 int main()
 {
 	string s;
-	int j = 0, i;
 	cout<<"Enter the Infix Eq."<<endl;
 	cin>>s;
 	int n = s.length();  //function of library cstring. 
@@ -80,30 +87,35 @@ int main()
  
     // copying the contents of the string 's' to char array 'a'
     strcpy(a, s.c_str());
+   
+    int j , i;
+    //reverse the infix eq.
+    reverse(a,n);
+    
+	cout<<"\n\nThe Reverse of Given string is:\n";
     for(i=0; i<n; i++)
         cout<<a[i]<<" ";
-    
     //put onto stacks
     
 	int x,y;
-	
+	j=0;
 	for(i=0; i<n; i++)
 	{
-		if((a[i]>='a' && a[i]<='z') || (a[i]>='A' && a[i]<='Z'))   //characters(operand)
+		if((a[i]>='a' && a[i]<='z') || (a[i]>='A' && a[i]<='Z'))   //characters
 		{
-			postfix[j] = a[i];j++;
+			prefix[j] = a[i];j++;
 		}
-		else if(a[i] == '(')  //open-brackets
+		else if(a[i] == '(')  //brackets
+		{
+			while(stack[top] != ')')
+			{	prefix[j] = pop();j++;	}
+			top--;
+		}
+		else if(a[i] == ')')  //brackets
 		{
 			push(a[i]);
 		}
-		else if(a[i] == ')')  //close-brackets
-		{
-			while(stack[top] != '(')
-			{	postfix[j] = pop();j++;	}
-			top--;
-		}
-		else  // symbols(operators)
+		else  // symbols
 		{
 			x = precedence(a[i]);
 			y = precedence(stack[top]);
@@ -115,7 +127,7 @@ int main()
 			{
 				while(x<y)
 				{
-					postfix[j] = pop();
+					prefix[j] = pop();
 					j++;
 					x = precedence(a[i]);
 					y = precedence(stack[top]);
@@ -124,12 +136,12 @@ int main()
 					{
 						if(a[i] == '+' || a[i] == '-' || a[i] == '*' || a[i] == '/' || a[i] == '|' || a[i] == '&')  // L TO R FOR +,-,*,/
 						{
-							postfix[j] = pop();
-							j++;
 							push(a[i]);   
 						}
 						else     // R to L for ^ and other 
 						{
+							prefix[j] = pop();
+							j++;
 							push(a[i]);
 						}
 					}
@@ -139,26 +151,29 @@ int main()
 			{
 				if(a[i] == '+' || a[i] == '-' || a[i] == '*' || a[i] == '/' || a[i] == '|' || a[i] == '&')  // L TO R FOR +,-,*,/
 				{
-					postfix[j] = pop();
-					j++;
 					push(a[i]);   
 				}
 				else     // R to L for ^ and other 
 				{
+					prefix[j] = pop();
+					j++;
 					push(a[i]);
 				}
 				
 			}
 		}
    }
+       
 while(top != -1)
 {
-	postfix[j] = stack[top];
+	prefix[j] = stack[top];
 	top--;j++;
 }
-cout<<endl<<"Postfix Eq. are\n";  
+reverse(prefix,n);
+cout<<endl<<"prefix Eq. are\n"; 
 for(i=0; i<n; i++)
-cout<<postfix[i];  
-return 0;
+	cout<<prefix[i]<<" "; 
+    return 0;
 }
 
+//k+l-m*n+(o^p)*w/u/v*t+q
