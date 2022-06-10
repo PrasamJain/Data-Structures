@@ -162,3 +162,6 @@ cout<<postfix[i];
 return 0;
 }
 
+//Example for conversion - try yourself !!
+
+// InfixEquation :-    k+l-m*n+(o^p)*w/u/v*t+q
