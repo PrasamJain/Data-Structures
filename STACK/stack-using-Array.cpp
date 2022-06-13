@@ -1,9 +1,10 @@
 /*
-creation of stack using static allocation with push,pop,peek and display function.
+We can create stack using two ways - Array and Linked List. 
+In this file we create stack using array static allocation with push,pop,peek and display function in C/C++.
 */
 
 #include <iostream>
-#define N 10
+#define N 100
 using namespace std;
 int stack[N];
 int top = -1;
@@ -24,13 +25,13 @@ int main()
 		switch(x)
 		{
 			case 1:
-				push();
+				push();    //insert elements acc. to FIFO
 				break;
 			case 2:
-				pop();
+				pop();     //delete element from top.
 				break;
 			case 3:
-				display();
+				display();    //display elements from top to empty stack.
 				break;
 		}
 	}while(x!=4);
