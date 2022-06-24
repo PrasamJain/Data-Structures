@@ -1,4 +1,4 @@
-/*postfix to infix*/
+/*we convert postfix Equation into infix equation*/
 
 #include<iostream>
 #include<stdlib.h>
